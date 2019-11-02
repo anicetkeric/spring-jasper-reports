@@ -1,13 +1,11 @@
 package com.reports.jasper.entities;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -23,24 +21,18 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 @Entity
-public class OrderLine implements Serializable {
+public class SaleOrder implements Serializable {
 
 	@Id
-	@GeneratedValue
+    @GeneratedValue
 	private int id;
-
-	private double priceUnit;
 	
-	private double discount;
-	private double amountTax;
-	private String description;
-
-	@ManyToOne
-	@JoinColumn(name = "order_id")
-	private Order order;
-	
-	@ManyToOne
-	@JoinColumn(name = "product_id")
-	private Product product;
-
+	private String reference;
+    private String origin;
+    private LocalDateTime orderDate;
+    private LocalDateTime validityDate;
+    
+    private double amountTotal;
+    private double amountTax;
+    private double amountUntaxed;
 }

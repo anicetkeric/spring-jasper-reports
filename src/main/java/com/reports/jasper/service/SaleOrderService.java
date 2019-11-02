@@ -1,5 +1,5 @@
 package com.reports.jasper.service;
 
-public interface OrderLineService {
+public interface SaleOrderService {
 
 }
