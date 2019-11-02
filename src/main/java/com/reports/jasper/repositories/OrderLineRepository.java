@@ -1,5 +1,9 @@
 package com.reports.jasper.repositories;
 
-public interface OrderLineRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.reports.jasper.entities.OrderLine;
+
+public interface OrderLineRepository extends JpaRepository<OrderLine, Long> {
 
 }
