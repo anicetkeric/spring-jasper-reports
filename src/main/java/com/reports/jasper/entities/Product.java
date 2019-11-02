@@ -29,5 +29,6 @@ public class Product implements Serializable {
 	
 	private String name;
     private String barCode;
+    private double price;
 
 }

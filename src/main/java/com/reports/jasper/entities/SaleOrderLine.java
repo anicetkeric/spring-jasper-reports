@@ -30,6 +30,7 @@ public class SaleOrderLine implements Serializable {
 	private int id;
 
 	private double priceUnit;
+	private double quantity;
 	
 	private double discount;
 	private double amountTax;
