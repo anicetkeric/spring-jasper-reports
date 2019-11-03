@@ -1,5 +1,8 @@
 package com.reports.jasper.service;
 
+import java.util.Collections;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,4 +28,7 @@ public class ProductServiceImpl implements ProductService {
 		return entity;
 	}
 
+	public List<Product> getAll() {
+		return repository.findAll();
+	}
 }
