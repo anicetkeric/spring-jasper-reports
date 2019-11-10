@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.reports.jasper.entities.Product;
+import com.reports.jasper.domain.entities.Product;
 import com.reports.jasper.service.ProductService;
 
 

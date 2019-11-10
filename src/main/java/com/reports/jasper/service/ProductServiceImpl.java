@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.reports.jasper.entities.Product;
+import com.reports.jasper.domain.entities.Product;
 import com.reports.jasper.repositories.ProductRepository;
 
 @Service

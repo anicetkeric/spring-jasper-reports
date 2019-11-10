@@ -1,4 +1,4 @@
-package com.reports.jasper.entities;
+package com.reports.jasper.domain.entities;
 
 import java.io.Serializable;
 

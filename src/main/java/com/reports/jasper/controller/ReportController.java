@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.reports.jasper.entities.Product;
+import com.reports.jasper.domain.entities.Product;
 import com.reports.jasper.service.ProductService;
 
 import net.sf.jasperreports.engine.JRException;
@@ -40,7 +40,7 @@ public class ReportController {
 	public ResponseEntity<?> generateProductReport(HttpServletResponse response)
 			throws JRException, IOException {
 		List<Product> products = productService.getAll();
-		File file = ResourceUtils.getFile("classpath:products.jrxml");
+		File file = ResourceUtils.getFile("classpath:reports/products.jrxml");
 		JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(products);
 		Map<String, Object> parameters = new HashMap<>();
@@ -53,15 +53,6 @@ public class ReportController {
 		final ServletOutputStream outputStream = response.getOutputStream();
 		JasperExportManager.exportReportToPdfStream(jasperPrint, outputStream);
 		return new ResponseEntity<>(HttpStatus.OK);
-		
-		/*
-		 * if (reportFormat.equalsIgnoreCase("html")) {
-		 * JasperExportManager.exportReportToHtmlFile(jasperPrint, path +
-		 * "\\employees.html"); } if (reportFormat.equalsIgnoreCase("pdf")) {
-		 * JasperExportManager.exportReportToPdfFile(jasperPrint, path +
-		 * "\\employees.pdf"); }
-		 */
-
 	}
 
 

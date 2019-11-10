@@ -42,7 +42,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5effb6b6-084a-475b-85f5-83de56fc363c"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ID]]></text>
 			</staticText>
@@ -51,7 +51,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="28969430-2415-40bb-afb2-dd5d895f5032"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[NAME]]></text>
 			</staticText>
@@ -60,7 +60,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf4ee193-41d4-4482-9670-b1c430f730cd"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[BARCODE]]></text>
 			</staticText>
@@ -69,7 +69,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0012382-c212-4bec-a6ca-c7b6b0d67f06"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PRICE]]></text>
 			</staticText>
@@ -85,7 +85,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5effb6b6-084a-475b-85f5-83de56fc363c"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
@@ -95,7 +95,7 @@
 				</reportElement>
 				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="5"/>
 				<textElement verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
@@ -105,7 +105,7 @@
 				</reportElement>
 				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="5"/>
 				<textElement verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{barCode}]]></textFieldExpression>
 			</textField>
@@ -114,7 +114,7 @@
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0012382-c212-4bec-a6ca-c7b6b0d67f06"/>
 				</reportElement>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
 			</textField>

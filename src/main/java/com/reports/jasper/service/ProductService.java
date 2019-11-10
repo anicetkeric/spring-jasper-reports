@@ -2,7 +2,7 @@ package com.reports.jasper.service;
 
 import java.util.List;
 
-import com.reports.jasper.entities.Product;
+import com.reports.jasper.domain.entities.Product;
 
 public interface ProductService {
 

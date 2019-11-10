@@ -1,11 +1,11 @@
-package com.reports.jasper.entities;
+package com.reports.jasper.domain.entities;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -14,7 +14,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -22,13 +21,18 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 @Entity
-public class Product implements Serializable {
+public class SaleOrder implements Serializable {
+
 	@Id
     @GeneratedValue
 	private int id;
 	
-	private String name;
-    private String barCode;
-    private double price;
-
+	private String reference;
+    private String origin;
+    private LocalDateTime orderDate;
+    private LocalDateTime validityDate;
+    
+    private double amountTotal;
+    private double amountTax;
+    private double amountUntaxed;
 }
